@@ -160,6 +160,7 @@ nav{
     "box4"
     "section1"
     "section2"
+    "map"
     "foot"
     ;
 
@@ -291,6 +292,10 @@ header p {
     backdrop-filter: blur(10px);
 }
 
+.map{
+    grid-area: map;
+}
+
 footer {
     grid-area: foot;
     background-color: var(--bg-color);
@@ -305,6 +310,7 @@ footer {
         "box1 box1 box2 box2"
         "box3 box3 box4 box4"
         "section1 section1 section2 section2"
+        "map map map map"
         "foot foot foot foot"
         ;
         }
@@ -322,6 +328,7 @@ footer {
         "head head head head"
         "box1 box2 box3 box4"
         "section1 section1 section2 section2"
+        "map map map map"
         "foot foot foot foot"
         ;
     }
