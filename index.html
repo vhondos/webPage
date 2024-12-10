@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./media/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Crimson+Text:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Crimson+Text:wght@400;600&display=swap"
+        rel="stylesheet" />
     <link rel="icon" sizes="32x32" href="./media/img/favicon.png">
 </head>
 
-<body>
+<body data-theme="light">
     <nav>
         <h2>Logo</h2>
+        <button class="theme-toggle" aria-label="Cambiar tema" accesskey="t">
+            <i class="fas fa-moon"></i>
+        </button>
 
         <div id="menuHamburguer" class="sideBarInactive">
             <label class="hamburger">
@@ -30,7 +32,7 @@
             </label>
             <ul class="nav__menu" role="menubar">
                 <li role="none">
-                    <a role="menuitem" href="#inicio" aria-current="page"> Inicio </a>
+                    <a role="menuitem" href="#" aria-current="page"> Inicio </a>
                 </li>
                 <li role="none">
                     <a role="menuitem" href="#products"> Productos </a>
@@ -42,7 +44,7 @@
                     <a role="menuitem" href="#contact"> Contacto </a>
                 </li>
             </ul>
-            </div>
+        </div>
     </nav>
     <div class="grid-container">
         <header id="inicio">
@@ -50,7 +52,8 @@
             <div>
                 <h2>HOTELES TRIVAGO</h2>
                 <p>Encuentra Hoteles baratos entre más de 600.000 alojamientos... ¡Haz las maletas!</p>
-                <a class="hero" href="#products">Explora nuestros productos <img src="./media/svg/arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+                <a class="hero" href="#products">Explora nuestros productos <img
+                        src="./media/svg/arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
             </div>
         </header>
         <div class="box1 box" id="products">
@@ -118,7 +121,7 @@
 
         <footer id="contact">
             <div class="l-container" style="padding: 4rem 0">
-                <h2 style="color: white">Únete al cambio</h2>
+                <h2>Únete al cambio</h2>
                 <p style="text-align: center">
                     Síguenos en nuestras redes sociales y mantente actualizado sobre
                     nuevos productos y consejos para un estilo de vida sostenible.
