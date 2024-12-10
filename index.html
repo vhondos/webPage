@@ -4,21 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Trivago</title>
+    <link rel="stylesheet" href="./media/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Crimson+Text:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" sizes="32x32" href="./media/img/favicon.png">
 </head>
 
 <body>
+    <nav>
+        <h2>Logo</h2>
+
+        <div id="menuHamburguer" class="sideBarInactive">
+            <label class="hamburger">
+                <input type="checkbox" onchange="displayMenu(this.checked)">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+            <ul class="nav__menu" role="menubar">
+                <li role="none">
+                    <a role="menuitem" href="#inicio" aria-current="page"> Inicio </a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" href="#products"> Productos </a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" href="#about"> Sobre nosotros </a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" href="#contact"> Contacto </a>
+                </li>
+            </ul>
+            </div>
+    </nav>
     <div class="grid-container">
-        <header>Header</header>
-        <div class="box1">Caja1</div>
-        <div class="box2">Caja2</div>
-        <div class="box3">Caja3</div>
-        <div class="box4">Caja4</div>
-        <div class="section1">Section1</div>
-        <div class="section2">Section2</div>
-        <footer>Footer</footer>
+        <header id="inicio">
+            <video src="./media/video/151054-800027519_small.mp4" autoplay muted loop></video>
+            <div>
+                <h2>HOTELES TRIVAGO</h2>
+                <p>Encuentra Hoteles baratos entre más de 600.000 alojamientos... ¡Haz las maletas!</p>
+                <a class="hero" href="#products">Explora nuestros productos <img src="./media/svg/arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+            </div>
+        </header>
+        <div class="box1 box" id="products">
+            <img src="./media/img/madrid-3952068_1280.jpg" alt="">
+            <div>
+                <h4>Madrid</h4>
+                <p>Desde 45 euros</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <img src="./media/img/kaputas-2519481_1280.jpg" alt="">
+            <div>
+                <h4>Canarias</h4>
+                <p>Desde 46 euros</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <img src="./media/img/havana-1613263_1280.jpg" alt="">
+            <div>
+                <h4>Cuba</h4>
+                <p>Desde 50 euros</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <img src="./media/img/holiday-2772361_1280.jpg" alt="">
+            <div>
+                <h4>Cancún</h4>
+                <p>Desde 39 euros</p>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="slider">
+                <figure>
+                    <div class="slide">
+                        <h1>China</h1>
+                        <img src="./media/img/hotel-6862159_1280.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <h1>Alemania</h1>
+                        <img src="./media/img/bedroom-6577523_1280.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <h1>Francia </h1>
+                        <img src="./media/img/rhine-river-3453860_1280.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <h1>Australia</h1>
+                        <img src="./media/img/hildesheim-2772941_1280.jpg" alt="">
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <div class="section2" id="about">
+            <h4>Hoteles en oferta para tus próximas vacaciones</h4>
+            <p>Busca y compara hoteles baratos y ofertas vacacionales alrededor de todo el mundo entre más de 500.000
+                alojamientos pertenecientes a las principales cadenas hoteleras. Te ayudamos a encontrar el hotel ideal
+                para tus próximas vacaciones.</p>
+            <br>
+            <p>Unas vacaciones en familia, un viaje de negocios, una escapada romántica... Compara los hoteles a los
+                precios más baratos, y solo tendrás que marcar las fechas en las que tienes planeado viajar a tu
+                destino. En pocos segundos buscaremos las mejores opciones para alojarte al mejor precio. De forma
+                rápida y sencilla podrás filtrar los hoteles en base a su precio, sus valoraciones o su distancia con
+                respecto al centro de cada ciudad, hasta dar con la opción que mejor se adapte a tu estilo de viaje.</p>
+        </div>
+
+        <footer id="contact">
+            <div class="l-container" style="padding: 4rem 0">
+                <h2 style="color: white">Únete al cambio</h2>
+                <p style="text-align: center">
+                    Síguenos en nuestras redes sociales y mantente actualizado sobre
+                    nuevos productos y consejos para un estilo de vida sostenible.
+                </p>
+
+                <ul class="social-menu">
+                    <li>
+                        <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="pinterest"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
     </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Hacer scroll hacía arriba" accesskey="s">
+        <img src="./media/svg/arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Descripción del SVG">
+    </button>
+
+    <script src="./media/js/app.js"></script>
+
 </body>
 
 </html>
